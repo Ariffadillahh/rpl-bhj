@@ -1,5 +1,5 @@
 import React from "react";
-import gbk2 from "../source/huu.svg";
+import gbk2 from "../source/huu-min.png";
 import history from "../source/history.png";
 import tangan from "../source/tangan.png";
 import team from "../source/team.png";

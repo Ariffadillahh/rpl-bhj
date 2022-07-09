@@ -9,6 +9,7 @@ import Galery from "./components/Galery";
 import Contact from "./components/Contact";
 import Error from "./components/Error";
 import News1 from "./components/News1";
+import "./style1.css";
 
 function App() {
   const [bg, setBg] = useState(false);

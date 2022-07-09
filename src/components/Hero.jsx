@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import gbk from "../source/gbk.png";
 import gbk2 from "../source/gbk2.svg";
 import gbk3 from "../source/gbk3.svg";
-import bljr from "../source/foto.svg";
+import bljr from "../source/foto.png";
 
 // Import Swiper styles
 import "swiper/css";
@@ -67,13 +67,13 @@ const Hero = () => {
           </h1>
         </div>
         <div className="m-3 ">
-          <div className="md:flex ">
-            <img src={bljr} style={{ width: "600", height: "600px" }} className="flex rounded-lg drop-shadow-lg   md:w-1/2 md:h-1/2 md:mt-[5rem] lg:pt-0 md:ml-10 md:pt-8" />
-            <div className="lg:mt-[70px] md:mt-10 ">
-              <h1 className="font-bold text-xl uppercase mt-3 mdtext-base lg:w-full md:text-center bg-clip-text bg-gradient-to-r from-[#034867] to-[#bbe5f8] text-transparent">
-                our vision & mission <span className="block w-[230px] md:w-[100px] h-1 my-4 rounded-lg bg-[#034867] text-center md:mx-auto"></span>
+          <div className="lg:flex ">
+            <img src={bljr} className="w-full h-full lg:w-1/2 lg:mt-[80px]" />
+            <div className="lg:mt-[150px] ">
+              <h1 className="font-bold text-xl uppercase -mt-5 mdtext-base lg:w-full md:text-center bg-clip-text bg-gradient-to-r from-[#034867] to-[#bbe5f8] text-transparent">
+                our vision & mission <span className="block w-[230px] md:w-[100px] h-1 my-4 rounded-lg bg-[#55b1db] text-center md:mx-auto"></span>
               </h1>
-              <h1 className="mt-3 md:ml-5 lg:text-lg md:mr-7 ">
+              <h1 className="  lg:text-lg md:mx-10 ">
                 Menjadi SMK yang memiliki keunggulan lokal dan global serta berakhlak mulia Mengutamakan kesiapan siswa untuk memasuki dunia kerja sertamengembangkankeprofesionalan Menyiapkan tenaga menengah kejuruan yang terampil berakhlak
                 mulia untuk mengisi kebutuhan dunia usaha dan industri Menyiapkan siswa agar menjadi warga negara yang produktif Menyiapkan siswa agar dapat berwirausaha secara mandiri Menyiapkan siswa agar dapat melanjutkan pedidikan ke
                 jenjang yang lebih tinggi
