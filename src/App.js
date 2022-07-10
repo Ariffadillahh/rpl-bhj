@@ -156,7 +156,7 @@ function App() {
                 <p className="tetx-gray-500 pb-6 ">Join dan belajar bersama kami di SMK BHUMI HUSADA</p>
                 <form className="flex flex-row flex-wrap">
                   <input type="text" name="name" id=" " className="text-gray-500 w-2/3 p-2 lg:w-full xl:w-2/3 focus:border-[#7AAEC5] rounded-l-md md:rounded-r-md lg:mt-2 xl:mt-0 lg:mr-2 xl:mr-0 " placeholder="Enter your email" />
-                  <button className="p-2 W-1/3 bg-[#7AAEC5] text-white hover:bg-[#a7cada] capitalize md:ml-2 lg:ml-0 lg:mt-2 xl:mt-0 xl:ml-2  rounded-r-md md:rounded-l-md ">subscribe</button>
+                  <button className="p-2 px-4 W-1/3 bg-[#7AAEC5] text-white hover:bg-[#a7cada] capitalize md:ml-2 lg:ml-0 lg:mt-2 xl:mt-0 xl:ml-2  rounded-r-md md:rounded-l-md ">Send</button>
                 </form>
               </div>
             </div>

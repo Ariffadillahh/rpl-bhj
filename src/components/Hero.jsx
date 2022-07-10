@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import TypeWriterEffect from "react-typewriter-effect";
 import { Link } from "react-router-dom";
 import gbk from "../source/gbk.png";
-import gbk2 from "../source/gbk2.svg";
+import gbk2 from "../source/gbkk2.svg";
 import gbk3 from "../source/gbk3.svg";
 import bljr from "../source/foto.png";
 
@@ -43,7 +43,10 @@ const Hero = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-          <div style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "center" }} className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#FFF3CE] justify-center"></div>
+          <div
+            style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "left bottom" }}
+            className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#DFF5FF] justify-center"
+          ></div>
         </SwiperSlide>
         <SwiperSlide>
           <div
