@@ -4,7 +4,7 @@ import TypeWriterEffect from "react-typewriter-effect";
 import { Link } from "react-router-dom";
 import gbk from "../source/gbk.png";
 import gbk2 from "../source/gbkk2.svg";
-import gbk3 from "../source/gbk3.svg";
+import gbk3 from "../source/gbkk3.svg";
 import bljr from "../source/foto.png";
 
 // Import Swiper styles
@@ -65,14 +65,14 @@ const Hero = () => {
             Software Engineering (RPL) adalah salah satu program keahlian yang ada di SMK Bhumi Husada yang dibuka pada tahun 2017.
             <span className="text-black pl-1 pb-3 text-center flex  place-content-center">
               Di SMK BHJ Belajar <span className="mx-1">Tentang</span>
-              <TypeWriterEffect startDelay={1500} cursorColor="#3F3D56" multiText={["Coding..", "Assemble pc...", "Editing Video...", "Podcast..", "And Network."]} multiTextDelay={1000} typeSpeed={30} multiTextLoop className="pl-1" />
+              <TypeWriterEffect startDelay={1500} cursorColor="#3F3D56" multiText={["Coding..", "Merakit pc...", "Editing Video...", "Podcast..", "dan Jaringan."]} multiTextDelay={1000} typeSpeed={30} multiTextLoop className="pl-1" />
             </span>
           </h1>
         </div>
         <div className="m-3 ">
           <div className="lg:flex ">
             <img src={bljr} className="w-full h-full lg:w-1/2 lg:mt-[80px]" />
-            <div className="lg:mt-[150px] ">
+            <div className="lg:mt-[300px] ">
               <h1 className="font-bold text-xl uppercase -mt-5 mdtext-base lg:w-full md:text-center bg-clip-text bg-gradient-to-r from-[#034867] to-[#bbe5f8] text-transparent">
                 our vision & mission <span className="block w-[230px] md:w-[100px] h-1 my-4 rounded-lg bg-[#55b1db] text-center md:mx-auto"></span>
               </h1>
