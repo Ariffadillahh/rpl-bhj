@@ -44,7 +44,7 @@ const Hero = () => {
         </SwiperSlide>
         <SwiperSlide>
           <div
-            style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "contain", backgroundPosition: "left bottom" }}
+            style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
             className="w-full h-[220px] md:h-[330px] lg:h-[500px] bg-[#DFF5FF] justify-center"
           ></div>
         </SwiperSlide>

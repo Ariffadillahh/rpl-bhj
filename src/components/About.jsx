@@ -6,7 +6,7 @@ import team from "../source/team.png";
 
 const About = () => {
   return (
-    <div style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover" }} className="w-full h-[180vh] md:h-[100vh]">
+    <div style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover"}} className="w-full h-[180vh] md:h-[100vh] bg-black">
       <div className="pt-[5rem]">
         <div className="text-center pt-10">
           <h1 className="capitalize text-2xl font-semibold text-white ">
