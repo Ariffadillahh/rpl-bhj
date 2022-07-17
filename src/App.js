@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Logo from "./source/logo.png";
-import { GrFormClose } from "react-icons/gr";
+import { MdClose } from "react-icons/md";
 import { GoThreeBars } from "react-icons/go";
 import Hero from "./components/Hero";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
@@ -10,9 +10,11 @@ import Contact from "./components/Contact";
 import Error from "./components/Error";
 import News1 from "./components/News1";
 import "./style1.css";
+import { IconContext } from "react-icons/lib";
 
 function App() {
   const [bg, setBg] = useState(false);
+  const style = { color: "white", fontSize: "1.5em" };
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
@@ -28,9 +30,9 @@ function App() {
 
   return (
     <Router>
-      <nav>
+      <nav className="top-0">
         <div className="w-full h-[85px] ">
-          <div className={`${bg ? "fixed w-full h-20 shadow-lg z-[100] bg-white/95 duration-300 " : "flex w-full h-20 "} transition duration-300`}>
+          <div className={`${bg ? "fixed w-full h-20 shadow-lg shadow-white/10 z-[100] top-0 bg-gray-900/95 duration-300 text-white" : "flex w-full h-20 text-white "} transition duration-300`}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
               <Link to="/">
                 <img src={Logo} alt="" width="100" height="100" />
@@ -57,29 +59,33 @@ function App() {
                   </Link>
                 </li>
               </ul>
-              <div onClick={handleNav} className="pr-7 md:hidden cursor-pointer">
-                {!Nav ? <GrFormClose size={40} /> : <GoThreeBars size={30} />}
-              </div>
+              <IconContext.Provider value={{ color: "white", size: "50px" }}>
+                <div onClick={handleNav} className="pr-7 md:hidden cursor-pointer text-white ">
+                  {Nav ? <MdClose style={style} size={40} className="text-white" /> : <GoThreeBars size={30} />}
+                </div>
+              </IconContext.Provider>
             </div>
-            <div className={!Nav ? "fixed pt-5 top-[95px] right-9 w-[250px] h-[200px] bg-white rounded-lg shadow-2xl md:hidden ease-in-out duration-300 z-[100] " : "fixed right-[-100%] top-[95px] ease-in-out duration-300   "}>
+            <div
+              className={Nav ? "fixed pt-5 top-[95px] right-9 w-[250px] h-[200px] bg-gray-800 rounded-lg shadow-lg shadow-white/10 md:hidden ease-in-out duration-300 z-[100] " : "fixed right-[-100%] top-[95px] ease-in-out duration-300   "}
+            >
               <ul>
                 <li>
-                  <Link to="/" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2 ">
+                  <Link to="/" spy={true} smooth={true} offset={50} duration={500} onClick={handleNav} className="text-base text-white font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2 ">
                     Home
                   </Link>
                 </li>
                 <li>
-                  <Link to="/About" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2">
+                  <Link to="/About" spy={true} smooth={true} offset={50} duration={500} onClick={handleNav} className="text-base text-white font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2">
                     About
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Galery" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2">
+                  <Link to="/Galery" spy={true} smooth={true} offset={50} duration={500} onClick={handleNav} className="text-base text-white font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase border-b-2">
                     Galery
                   </Link>
                 </li>
                 <li>
-                  <Link to="/Contact" spy={true} smooth={true} offset={50} duration={500} className="text-base text-slate-800 font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
+                  <Link to="/Contact" spy={true} smooth={true} offset={50} duration={500} onClick={handleNav} className="text-base text-white font-bold py-2 mx-8 flex transition hover:text-[#7AAEC5] duration-300 uppercase">
                     Contact
                   </Link>
                 </li>
