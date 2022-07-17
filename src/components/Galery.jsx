@@ -1,5 +1,5 @@
 import Lightroom from "react-lightbox-gallery";
-import bunga from "../source/bunga.png";
+import bnga from "../source/bnga.png";
 export default function App() {
   var images = [
     {
@@ -51,7 +51,7 @@ export default function App() {
   return (
     <div cla>
       <div>
-        <img src={bunga} className="mx-auto mt-10" />
+        <img src={bnga} className="mx-auto mt-10" />
       </div>
       <h1 className="text-center uppercase mt-7 text-lg font-bold text-white ">
         Gallery rpl smk bhumi husada <span className="block w-[100px] h-1 my-7 rounded-lg bg-[#034867] text-center mx-auto"></span>
