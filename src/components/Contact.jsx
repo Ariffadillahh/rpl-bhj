@@ -1,10 +1,12 @@
 import React from "react";
 import org from "../source/org.svg";
+import kontak from "../source/kontak.png";
 
 const Contact = () => {
   return (
     <div>
-      <h1 className="text-center uppercase mt-[60px] text-lg font-bold lg:text-3xl text-white ">
+      <img src={kontak} className="mx-auto mt-12" />
+      <h1 className="text-center uppercase mt-[40px] text-lg font-bold lg:text-3xl text-white ">
         Contact Us <span className="block w-[100px] h-1 my-7 rounded-lg bg-[#034867] text-center mx-auto"></span>
       </h1>
       <div class=" px-8 my-14 ">
