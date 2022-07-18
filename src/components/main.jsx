@@ -6,5 +6,6 @@ import "swiper/css/bundle";
 import "./styles.css";
 
 import App from "./Hero.jsx";
+import App from "./Slider.jsx";
 
 ReactDOM.render(<App />, document.getElementById("app"));

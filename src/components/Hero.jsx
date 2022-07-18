@@ -1,7 +1,6 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import TypeWriterEffect from "react-typewriter-effect";
-import { Link } from "react-router-dom";
 import gbk from "../source/gbk.png";
 import gbk2 from "../source/gbkk2.svg";
 import gbk3 from "../source/gbkk3.svg";
@@ -12,11 +11,31 @@ import "swiper/css";
 import "swiper/css/pagination";
 
 import "./style.css";
-
 // import required modules
-import { Pagination, Autoplay } from "swiper";
+import { Pagination, Autoplay, Navigation } from "swiper";
 
 const Hero = () => {
+  const [swiperRef, setSwiperRef] = useState(null);
+
+  let appendNumber = 4;
+  let prependNumber = 1;
+
+  const prepend2 = () => {
+    swiperRef.prependSlide(['<div class="swiper-slide">Slide ' + --prependNumber + "</div>", '<div class="swiper-slide">Slide ' + --prependNumber + "</div>"]);
+  };
+
+  const prepend = () => {
+    swiperRef.prependSlide('<div class="swiper-slide">Slide ' + --prependNumber + "</div>");
+  };
+
+  const append = () => {
+    swiperRef.appendSlide('<div class="swiper-slide">Slide ' + ++appendNumber + "</div>");
+  };
+
+  const append2 = () => {
+    swiperRef.appendSlide(['<div class="swiper-slide">Slide ' + ++appendNumber + "</div>", '<div class="swiper-slide">Slide ' + ++appendNumber + "</div>"]);
+  };
+
   return (
     <div id="home" className="">
       <Swiper
@@ -30,7 +49,7 @@ const Hero = () => {
         pagination={{
           dynamicBullets: true,
         }}
-        modules={[Autoplay, Pagination]}
+        modules={[Autoplay, Pagination, Navigation]}
         className="mySwiper"
       >
         <SwiperSlide>
@@ -89,36 +108,67 @@ const Hero = () => {
             </div>
           </div>
         </div>
-        <div className="mb-10">
-          <h1 className="m-3 pt-5 font-bold italic text-lg md:ml-10 text-white">Latest News → </h1>
-          <div className="md:flex  ">
-            <div
-              style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
-              className="min-w-[330px]  md:w-1/3 h-[420px]  m-5  rounded-xl relative drop-shadow-xl xl:mb-10 "
-            >
-              <Link to="/News1">
-                <button className="absolute bottom-5 ml-6 px-6 py-3 bg-white/60 hover:bg-white/80 transition duration-300">Lihat Berita</button>
-              </Link>
-            </div>
-            <div className="mb-10 mt-5 flex md:block md:w-full md:mr-5 xl:flex ">
-              <div
-                style={{ backgroundImage: `url(${gbk3})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
-                className="w-1/2  ml-5 md:w-full md:mr-5 md:ml-0 h-[200px] xl:h-full    bg-slate-400 rounded-xl drop-shadow-xl relative flex"
-              >
-                <Link to="/News1">
-                  <button className="absolute bottom-4 ml-4 px-5 py-2 bg-white/60 hover:bg-white/80 transition duration-300">Lihat Berita</button>
-                </Link>
-              </div>
-              <div
-                style={{ backgroundImage: `url(${gbk2})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}
-                className="w-1/2 mr-5 ml-5 md:w-full md:mr-5 md:ml-0 h-[200px] xl:h-full md:mt-5 xl:mt-0    bg-slate-400 rounded-xl drop-shadow-xl relative flex"
-              >
-                <Link to="/News1">
-                  <button className="absolute bottom-4 ml-4 px-5 py-2 bg-white/60 hover:bg-white/80 transition duration-300">Lihat Berita</button>
-                </Link>
-              </div>
-            </div>
+        <div className="mb-10 mt-[50px] m-5">
+          <div>
+            <h1 className="text-white font-semibold m-5 text-lg">Guru & Murid</h1>
           </div>
+          <Swiper
+            onSwiper={setSwiperRef}
+            centeredSlides={true}
+            loop={true}
+            spaceBetween={30}
+            autoplay={{
+              delay: 5000,
+              disableOnInteraction: false,
+            }}
+            pagination={{
+              clickable: true,
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+              },
+              488: {
+                slidesPerView: 1,
+                spaceBetween: 20,
+              },
+              768: {
+                slidesPerView: 2,
+                spaceBetween: 30,
+              },
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 40,
+              },
+            }}
+            navigation={true}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <div className="">
+              <SwiperSlide className="rounded-lg">
+                <div className="h-[400px]">
+                  <h1 className="">hlo 1</h1>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="rounded-lg">
+                <div className="h-[400px] ">
+                  <h1>hlo 2</h1>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="rounded-lg">
+                <div className="h-[400px] ">
+                  <h1>hlo 3</h1>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide className="rounded-lg">
+                <div className="h-[400px] ">
+                  <h1>hlo 4</h1>
+                </div>
+              </SwiperSlide>
+            </div>
+          </Swiper>
         </div>
       </div>
     </div>
