@@ -5,7 +5,11 @@ import gbk from "../source/gbk.png";
 import gbk2 from "../source/gbkk2.svg";
 import gbk3 from "../source/gbkk3.svg";
 import bljr from "../source/foto.png";
-import minion from "../source/minion.webp"
+import LKS from "../source/LKS.webp";
+import wisuda from "../source/wisuda.webp";
+import gudep from "../source/gudep.webp";
+import LSP from "../source/LSP.webp";
+
 
 // Import Swiper styles
 import "swiper/css";
@@ -111,7 +115,7 @@ const Hero = () => {
         </div>
         <div className="mb-10 mt-[50px] m-5">
           <div>
-            <h1 className="text-white font-semibold m-5 text-lg">Guru & Murid</h1>
+            <h1 className="text-white font-semibold m-5 text-lg">Latest news</h1>
           </div>
           <Swiper
             onSwiper={setSwiperRef}
@@ -146,26 +150,35 @@ const Hero = () => {
           >
             <div className="section">
               <SwiperSlide className="rounded-lg bg-slate-900">
-                <div className="h-[400px] w-full relative" style={{ backgroundImage: `url(${minion})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+                <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${LKS})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className="">
-                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0">Box Office: ‘Minions: The Rise of Gru’ Opens to $10.75 Million in Thursday Previews</h1>
-                    <a href="https://variety.com/2022/film/box-office/minions-rise-of-gru-box-office-thursday-1235307236/" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Lomba Kompetensi Siswa Farmasi Tingkat Provinsi DKI Jakarta, SMK Farmasi Bhumi Husada memperoleh Juara ke-2 </h1>
+                    <a href="https://www.instagram.com/p/CgDteqSruIt/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
                   </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="rounded-lg">
-                <div className="h-[400px] ">
-                  <h1>hlo 2</h1>
+              <SwiperSlide className="rounded-lg bg-slate-900">
+                <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${wisuda})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+                  <div className="">
+                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Wisuda dan Angkat Sumpah Lulusan XIII Tahun 2022</h1>
+                    <a href="https://www.instagram.com/p/CftvBUQPccH/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                  </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="rounded-lg">
-                <div className="h-[400px] ">
-                  <h1>hlo 3</h1>
+              <SwiperSlide className="rounded-lg bg-slate-900">
+                <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${gudep})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+                  <div className="">
+                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Pengukuhan dan Pelantikan Majelis Pembimbing dan Pembina Gugus Depan 09.217 dan 09.218 Pangkalan SMK Bhumi Husada</h1>
+                    <a href="https://www.instagram.com/p/Cdx9bVRP4ty/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                  </div>
                 </div>
               </SwiperSlide>
-              <SwiperSlide className="rounded-lg">
-                <div className="h-[400px] ">
-                  <h1>hlo 4</h1>
+              <SwiperSlide className="rounded-lg bg-slate-900">
+                <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${LSP})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
+                  <div className="">
+                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Pelaksanaan USK LSP P3 KFI SMK Bhumi Husada Jakarta</h1>
+                    <a href="https://www.instagram.com/p/Cb2CvpYLU3M/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                  </div>
                 </div>
               </SwiperSlide>
             </div>

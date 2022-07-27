@@ -176,12 +176,11 @@ function App() {
                 <strong>
                   <span>RPLBHJ</span>
                 </strong>
-                . Di Buat oleh Tim RPl
               </div>
               <div>
-                Designed by{" "}
+                Developed by{" "}
                 <a href="#" class="text-[#7AAEC5]">
-                  California
+                  Team RPL
                 </a>
               </div>
             </div>
