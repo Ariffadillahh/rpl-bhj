@@ -10,10 +10,10 @@ import wisuda from "../source/wisuda.webp";
 import gudep from "../source/gudep.webp";
 import LSP from "../source/LSP.webp";
 
-
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
+import "swiper/css/navigation";
 
 import "./style.css";
 // import required modules
@@ -122,7 +122,6 @@ const Hero = () => {
             centeredSlides={true}
             loop={true}
             spaceBetween={30}
-
             pagination={{
               clickable: true,
             }}
@@ -145,7 +144,7 @@ const Hero = () => {
               },
             }}
             navigation={true}
-            modules={[ Pagination, Navigation]}
+            modules={[Pagination, Navigation]}
             className="mySwiper"
           >
             <div className="section">
@@ -153,15 +152,19 @@ const Hero = () => {
                 <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${LKS})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className="">
                     <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Lomba Kompetensi Siswa Farmasi Tingkat Provinsi DKI Jakarta, SMK Farmasi Bhumi Husada memperoleh Juara ke-2 </h1>
-                    <a href="https://www.instagram.com/p/CgDteqSruIt/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                    <a href="https://www.instagram.com/p/CgDteqSruIt/?utm_source=ig_web_copy_link" target="_blank">
+                      <button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="rounded-lg bg-slate-900">
                 <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${wisuda})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className="">
-                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Wisuda dan Angkat Sumpah Lulusan XIII Tahun 2022</h1>
-                    <a href="https://www.instagram.com/p/CftvBUQPccH/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                    <h1 className="text-white w-full p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Wisuda dan Angkat Sumpah Lulusan XIII Tahun 2022</h1>
+                    <a href="https://www.instagram.com/p/CftvBUQPccH/?utm_source=ig_web_copy_link" target="_blank">
+                      <button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
@@ -169,15 +172,19 @@ const Hero = () => {
                 <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${gudep})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className="">
                     <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Pengukuhan dan Pelantikan Majelis Pembimbing dan Pembina Gugus Depan 09.217 dan 09.218 Pangkalan SMK Bhumi Husada</h1>
-                    <a href="https://www.instagram.com/p/Cdx9bVRP4ty/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                    <a href="https://www.instagram.com/p/Cdx9bVRP4ty/?utm_source=ig_web_copy_link" target="_blank">
+                      <button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>
               <SwiperSlide className="rounded-lg bg-slate-900">
                 <div className="h-[400px] w-full relative rounded-lg" style={{ backgroundImage: `url(${LSP})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center" }}>
                   <div className="">
-                    <h1 className="text-white p-5 pb-[75px] absolute bg-slate-600/80 bottom-0 rounded-lg">Pelaksanaan USK LSP P3 KFI SMK Bhumi Husada Jakarta</h1>
-                    <a href="https://www.instagram.com/p/Cb2CvpYLU3M/?utm_source=ig_web_copy_link" target="_blank"><button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button></a>
+                    <h1 className="text-white p-5 pb-[75px] w-full absolute bg-slate-600/80 bottom-0 rounded-lg">Pelaksanaan USK LSP P3 KFI SMK Bhumi Husada Jakarta</h1>
+                    <a href="https://www.instagram.com/p/Cb2CvpYLU3M/?utm_source=ig_web_copy_link" target="_blank">
+                      <button className="bg-white p-3 px-5 absolute bottom-4 left-3">Lihat</button>
+                    </a>
                   </div>
                 </div>
               </SwiperSlide>

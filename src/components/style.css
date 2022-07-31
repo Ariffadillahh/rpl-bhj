@@ -23,3 +23,9 @@
   align-items: center;
 }
 
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  @apply bg-black/50 p-2 rounded-lg;
+  backdrop-filter: blur(1px);
+  color: #fff;
+}

@@ -32,7 +32,7 @@ function App() {
     <Router>
       <nav className="top-0">
         <div className="w-full h-[85px] ">
-          <div className={`${bg ? "fixed w-full h-20 shadow-lg shadow-white/10 z-[100] top-0 bg-gray-900/95 duration-300 text-white" : "flex w-full h-20 text-white "} transition duration-300`}>
+          <div className={`${bg ? "fixed w-full h-20 shadow-lg shadow-white/10 z-[100] top-0 bg-gray-900/95 transition-all duration-300 text-white" : "flex w-full h-20 text-white transition-all duration-300 "}`}>
             <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
               <Link to="/">
                 <img src={Logo} alt="" width="100" height="100" />

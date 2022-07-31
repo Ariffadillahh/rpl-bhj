@@ -1,9 +1,10 @@
 import Lightroom from "react-lightbox-gallery";
+import "./style.css";
 import bnga from "../source/bnga.png";
 export default function App() {
   var images = [
     {
-      src: "https://pict.sindonews.net/dyn/850/pena/news/2022/01/18/158/659825/cerita-upin-ipin-disebut-berasal-dari-kisah-nyata-tim-produksi-beri-penjelasan-ini-teu.jpg",
+      src: "https://i.ibb.co/F7dXbkz/images.jpg",
       desc: "Person wearing shoes",
       sub: "Gift Habeshaw",
     },
